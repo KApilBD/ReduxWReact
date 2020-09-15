@@ -9,7 +9,7 @@ export const getUsersRequest = () => ({
 
 export const getUsersSuccess = ({ items }) => ({
     type: Types.GET_USERS_SUCCESS,
-    pauload: {
+    payload: {
         items
     }
 });
