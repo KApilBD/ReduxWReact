@@ -1,6 +1,7 @@
 export const Types = {
     GET_USERS_REQUEST : 'users/get_users_request',
     GET_USERS_SUCCESS : 'users/get_users_success',
+    CREAT_USERS_REQUEST : 'users/create_users_request'
 }
 
 export const getUsersRequest = () => ({
@@ -11,5 +12,13 @@ export const getUsersSuccess = ({ items }) => ({
     type: Types.GET_USERS_SUCCESS,
     payload: {
         items
+    }
+});
+
+export const createUserRequest = ({ firstName, lastName }) => ({
+    type: Types.CREAT_USERS_REQUEST,
+    payload: {
+        firstName,
+        lastName
     }
 });
